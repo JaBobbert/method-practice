@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println(displayMenu(scan));
-        System.out.println(displayMenu(scan));
+        displayMenu(scan);
+        displayMenu(scan);
     }
 
-    public static String displayMenu(Scanner pick){
+    public static void displayMenu(Scanner pick){
         System.out.println("=== MENU ===" +
                 "\n 1. Coffee - $3.99" +
                 "\n 2. Tea - $2.99" +
@@ -18,16 +18,16 @@ public class Menu {
         int choose = pick.nextInt();
         switch (choose){
             case 1 -> {
-                return "You chosen Coffee.";
+                System.out.println("You chosen Coffee.");
             }
             case 2  -> {
-                return "You chosen Tea.";
+                System.out.println("You chosen Tea.");
             }
             case 3 -> {
-                return "You chosen Cookie.";
+                System.out.println("You chosen Cookie.");
             }
             default -> {
-                return "Invalid Answer.";
+                System.out.println("Invalid Answer.");
             }
         }
 
