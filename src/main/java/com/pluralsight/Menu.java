@@ -8,7 +8,10 @@ public class Menu {
         displayMenu(scan);
         displayMenu(scan);
         displayMenu(scan);
+
+        scan.close();
     }
+
 
     public static void displayMenu(Scanner pick){
         System.out.println("=== MENU ===" +
