@@ -7,6 +7,7 @@ public class Menu {
         Scanner scan = new Scanner(System.in);
         displayMenu(scan);
         displayMenu(scan);
+        displayMenu(scan);
     }
 
     public static void displayMenu(Scanner pick){
